@@ -49,6 +49,16 @@ public class CommonConverter {
      * @param target    目标对象
      * @param converter 转换器，默认使用cglib转换器
      */
+    /**
+     * 转换对象
+     *
+     * @param source 源对象
+     * @param target 目标对象
+     * @param converter 转换器，默认使用cglib转换器
+     * @param <T> source
+     * @param <E> target
+     * @return target
+     */
     private static <T, E> E convert(T source, E target, Converter converter) {
         //参数校验
         if (source == null || target == null) {

@@ -229,11 +229,11 @@
 
     <!-- 仓库信息 -->
     <scm>
-        <connection>scm:git:git@github.com:lujun920/mofa3-github.git</connection>
+        <connection>scm:git:git@github.com:mofa3/mofa3.git</connection>
         <developerConnection>
-            scm:git:git@github.com:lujun920/mofa3-github.git
+            scm:git:git@github.com:mofa3/mofa3.git
         </developerConnection>
-        <url>https://github.com/lujun920/mofa3-github/tree/master</url>
+        <url>https://github.com/mofa3/mofa3/tree/master</url>
     </scm>
 
 
@@ -242,7 +242,7 @@
         <developer>
             <name>lumoere</name>
             <email>lumoere@gmail.com</email>
-            <organization>https://github.com/lujun920</organization>
+            <organization>https://github.com/mofa3</organization>
             <timezone>+8</timezone>
         </developer>
     </developers>
@@ -250,18 +250,14 @@
     <!-- 发布管理信息 -->
     <distributionManagement>
         <repository>
-            <!-- 这里的id必须要和全局配置中的release id 一致 -->
             <id>sonatype_releases</id>
             <name>Nexus Release Repository</name>
-            <!-- 这里就是在创建issue成功后，对方回复的release发布地址-->
-<!--            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>-->
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
         </repository>
         <snapshotRepository>
-            <!-- 这里的id必须要和全局配置中的snapshot id 一致 -->
             <id>sonatype_snapshots</id>
             <name>Nexus Snapshot Repository</name>
-            <!-- 这里就是在创建issue成功后，对方回复的snapshot发布地址-->
-<!--            <url>https://oss.sonatype.org/content/repositories/snapshots</url>-->
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
 
@@ -272,6 +268,7 @@
                 <artifactId>maven-pmd-plugin</artifactId>
                 <version>3.8</version>
                 <configuration>
+                    <skip>true</skip>
                     <rulesets>
                         <ruleset>rulesets/java/ali-comment.xml</ruleset>
                         <ruleset>rulesets/java/ali-concurrent.xml</ruleset>
@@ -314,13 +311,49 @@
             </plugin>
 
             <plugin>
+                <groupId>org.sonatype.plugins</groupId>
+                <artifactId>nexus-staging-maven-plugin</artifactId>
+                <version>1.6.7</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <serverId>sonatype_releases</serverId>
+                    <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+                    <!-- 如果希望发布后自动执行close和release操作，此处可以调整为true -->
+                    <autoReleaseAfterClose>false</autoReleaseAfterClose>
+                </configuration>
+            </plugin>
+
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.18.1</version>
-                <configuration>
-                    <skipTests>true</skipTests>
-                </configuration>
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <id>attach-sources</id>-->
+<!--                        <goals>-->
+<!--                            <goal>jar-no-fork</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
             </plugin>
+
+            <!-- 生成asc 校验文件 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>1.5</version>
+                <executions>
+                    <execution>
+                        <!-- 必须和配置中的gpg校验id一致 -->
+                        <id>gpg</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
             <!-- 打包源码上传插件 -->
             <plugin>
                 <artifactId>maven-source-plugin</artifactId>
@@ -337,14 +370,7 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
-                </configuration>
-            </plugin>
+
         </plugins>
     </build>
 

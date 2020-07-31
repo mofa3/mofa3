@@ -16,9 +16,8 @@
 package io.github.mofa3.lang.util;
 
 import com.google.common.base.Joiner;
-import lombok.experimental.UtilityClass;
-import lombok.extern.slf4j.Slf4j;
 import io.github.mofa3.lang.common.constant.MofaConstants;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * 监控报警工具类，配合运维监控报警策略使用
@@ -27,7 +26,6 @@ import io.github.mofa3.lang.common.constant.MofaConstants;
  * @version: v 0.1 AlarmLog.java, 2019-10-16 3:47 下午 Exp $
  */
 @Slf4j(topic = "ALARM_WARNING")
-@UtilityClass
 public class AlarmLog {
 
     /**
@@ -49,13 +47,18 @@ public class AlarmLog {
     /**
      * sql执行异常
      *
-     * @param msg
+     * @param msg log内容
      */
     public static void sqlWarning(final String msg) {
         String output = Joiner.on("").join(ALARM_EXEC_SQL_WARNING, MofaConstants.BLANK, SPLIT_SYMBOL, msg, SPLIT_SYMBOL);
         log.warn(output);
     }
 
+    /**
+     * 通用自定义log输出
+     *
+     * @param msg log内容
+     */
     public static void generalWarning(final String msg) {
         String output = Joiner.on("").join(ALARM_GENERAL_WARNING, MofaConstants.BLANK, SPLIT_SYMBOL, msg, SPLIT_SYMBOL);
         log.warn(output);
