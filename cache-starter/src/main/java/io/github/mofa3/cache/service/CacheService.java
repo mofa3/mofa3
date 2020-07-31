@@ -22,7 +22,7 @@ import java.util.concurrent.TimeUnit;
  * 缓存使用过期策略，默认以配置文件缓存过期时间
  * redis.cache.expire-time配置
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: CacheService.java, v 0.1 2018-09-19 下午1:30 Exp $
  */
 @SuppressWarnings("unused")

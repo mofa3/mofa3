@@ -23,7 +23,7 @@ import java.util.List;
 /**
  * redis 配置属性类
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: RedisConfigProperties.java, v 0.1 2018-04-19 下午3:17 Exp $
  */
 @Data

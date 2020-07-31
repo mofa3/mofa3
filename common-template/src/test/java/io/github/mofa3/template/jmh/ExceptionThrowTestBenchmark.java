@@ -33,7 +33,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * TODO
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: ExceptionThrowTestBenchmark.java, v 0.1 2019-03-26 9:30 PM Exp $
  * @BenchmarkMode Mode.Throughput
  * 在有时限的迭代里头，该方法能被调用多少次。整体吞吐量，例如“1秒内可以执行多少次调用”。

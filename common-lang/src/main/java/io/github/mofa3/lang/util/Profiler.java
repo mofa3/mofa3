@@ -28,7 +28,7 @@ import java.util.List;
 /**
  * 本工具是用来测试并统计线程执行时间的工具
  *
- * @author ${guanzhong}
+ * @author lumoere
  * @version $Id: Profiler.java, v 0.1 2017年11月28日 下午10:56 Exp $
  */
 @SuppressWarnings("unused")

@@ -33,7 +33,7 @@ import static org.apache.commons.lang3.StringUtils.trim;
 /**
  * 多币种金额类展示转换/反转工具类。
  *
- * @author ${guanzhong}
+ * @author lumoere
  * @version $Id: MoneyFormatter.java, v 0.1 2018年01月05日 下午3:07 Exp $
  */
 @SuppressWarnings("unused")

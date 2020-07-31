@@ -23,7 +23,7 @@ import org.apache.commons.lang3.StringUtils;
 /**
  * 响应码
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: ResponseCodeEnum.java, v 0.1 2018-04-13 下午9:19 Exp $
  */
 @SuppressWarnings("unused")

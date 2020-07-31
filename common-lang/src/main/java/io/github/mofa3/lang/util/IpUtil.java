@@ -26,7 +26,7 @@ import java.util.Enumeration;
 /**
  * IP地址获取工具类
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: IpUtil.java, v 0.1 2018-07-06 上午10:34 Exp $
  */
 @SuppressWarnings("unused")

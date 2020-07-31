@@ -22,7 +22,7 @@ import io.github.mofa3.lang.money.MultiCurrencyMoney;
 /**
  * TODO
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: MoneyTest.java, v 0.1 2018-05-28 下午7:59 Exp $
  */
 public class MoneyTest {

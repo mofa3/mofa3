@@ -20,7 +20,7 @@ import io.github.mofa3.lang.domain.Result;
 /**
  * Controller模板接口
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: ControllerTemplate.java, v 0.1 2018-04-16 下午5:19 Exp $
  */
 @SuppressWarnings("unused")

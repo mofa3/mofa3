@@ -21,7 +21,7 @@ import io.github.mofa3.lang.enums.ResponseCodeEnum;
 /**
  * try catch无法处理，需要往上层抛的异常，需要把异常栈信息和异常内容抛出
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: SystemRunningException.java, v 0.1 2018-04-17 下午10:20 Exp $
  */
 @SuppressWarnings("unused")

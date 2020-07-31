@@ -22,7 +22,7 @@ import lombok.Getter;
 /**
  * HttpMethods
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: HttpBuilder.java, v 0.1 2018-04-19 下午5:49 Exp $
  */
 @SuppressWarnings("unused")

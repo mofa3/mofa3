@@ -33,7 +33,7 @@ import io.github.mofa3.cache.properties.RedisConfigProperties;
  * redisson config
  * redis 服务模式为单机（主从也是该模式配置），初始化配置
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: RedissonSingleConfiguration.java, v 0.1 2018-07-23 下午3:16 Exp $
  */
 @Slf4j

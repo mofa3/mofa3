@@ -22,7 +22,7 @@ import io.github.mofa3.lang.enums.ResponseCodeEnum;
 /**
  * 统一异常处理类
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: UnifiedException.java, v 0.1 2018-04-13 下午9:16 Exp $
  */
 @EqualsAndHashCode(callSuper = true)

@@ -24,7 +24,7 @@ import lombok.AllArgsConstructor;
  * <li>http://en.wikipedia.org/wiki/ISO_4217
  * <li>币种符号权威参考：http://www.xe.com/symbols.php
  *
- * @author ${guanzhong}
+ * @author lumoere
  * @version $Id: CurrencyEnum.java, v 0.1 2018年01月05日 下午3:07 Exp $
  */
 @SuppressWarnings("unused")

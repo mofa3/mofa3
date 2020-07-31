@@ -21,7 +21,7 @@ import io.github.mofa3.lang.enums.ResponseCodeEnum;
 /**
  * 服务不可用异常，目前用于网关层，熔断异常返回
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: ServiceIsNotAvailableException.java, v 0.1 2018-04-14 下午5:30 Exp $
  */
 @SuppressWarnings("unused")

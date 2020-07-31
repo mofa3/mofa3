@@ -25,7 +25,7 @@ import java.util.Calendar;
 /**
  * TODO
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: DateTest.java, v 0.1 2018-05-25 下午2:41 Exp $
  */
 public class DateTest {

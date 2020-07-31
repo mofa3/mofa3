@@ -30,7 +30,7 @@ import java.util.Properties;
 /**
  * mybatis sql执行拦截器、sql耗时监控
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: SqlExecutorInterceptor.java, v 0.1 2018-04-24 上午11:55 Exp $
  */
 @Intercepts({

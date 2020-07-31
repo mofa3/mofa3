@@ -18,7 +18,7 @@ package io.github.mofa3.lang.exception;
 /**
  * 自定义code异常信息，限于有需要调用服务判断code做处理时使用
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: CustomCodeException.java, v 0.1 2018-07-04 下午10:31 Exp $
  */
 @SuppressWarnings("unused")

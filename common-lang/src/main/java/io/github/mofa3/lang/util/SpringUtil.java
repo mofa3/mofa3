@@ -22,7 +22,7 @@ import org.springframework.context.ApplicationContextAware;
 /**
  * spring bean获取工具类
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: SpringUtil.java, v 0.1 2018-04-20 下午3:55 Exp $
  */
 @SuppressWarnings("unused")

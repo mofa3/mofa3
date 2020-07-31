@@ -22,7 +22,7 @@ import io.github.mofa3.lang.util.RandomCodeUtil;
 /**
  * TODO
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: Md5Test.java, v 0.1 2018-03-26 上午10:25 Exp $
  */
 public class Md5Test {

@@ -39,7 +39,7 @@ import java.util.TimeZone;
 /**
  * jackson 实现json、对象的转换操作
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: JsonUtil.java, v 0.1 2018-09-18 下午10:10 Exp $
  */
 @UtilityClass

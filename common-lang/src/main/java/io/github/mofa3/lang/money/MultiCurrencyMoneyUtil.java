@@ -24,7 +24,7 @@ import org.apache.commons.lang3.StringUtils;
 /**
  * 金额计算工具类。
  *
- * @author ${guanzhong}
+ * @author lumoere
  * @version $Id: MultiCurrencyMoneyUtil.java, v 0.1 2018年01月05日 下午3:07 Exp $
  */
 @SuppressWarnings("unused")

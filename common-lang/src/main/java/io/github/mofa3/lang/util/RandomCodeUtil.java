@@ -21,7 +21,7 @@ import java.util.concurrent.ThreadLocalRandom;
  * 随机码生成器,生成验证码,密码盐值
  * 可生成数字、大写、小写字母及三者混合类型的验证码
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: MD5Encryption.java, v 0.1 2017-11-29 下午2:27 Exp $
  */
 @SuppressWarnings("unused")

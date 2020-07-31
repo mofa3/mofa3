@@ -20,7 +20,7 @@ import java.text.MessageFormat;
 /**
  * TODO
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: XmlTest.java, v 0.1 2018-03-26 下午3:12 Exp $
  */
 public class XmlTest {

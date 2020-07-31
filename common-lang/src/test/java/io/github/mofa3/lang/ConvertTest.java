@@ -24,7 +24,7 @@ import org.springframework.beans.BeanUtils;
 /**
  * TODO
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: ConvertTest.java, v 0.1 2018-07-17 下午2:35 Exp $
  */
 public class ConvertTest {

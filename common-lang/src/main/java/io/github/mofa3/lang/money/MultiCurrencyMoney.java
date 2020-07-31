@@ -52,7 +52,7 @@ import java.util.Currency;
  *   <li>Money类实现了equals和hashCode方法。
  * </ul>
  *
- * @author ${guanzhong}
+ * @author lumoere
  * @version $Id: MultiCurrencyMoney.java, v 0.1 2018年01月05日 下午3:07 Exp $
  */
 @SuppressWarnings("unused")

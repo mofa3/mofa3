@@ -23,7 +23,7 @@ import java.io.Serializable;
  * 错误信息上下文
  * 原则上该类应该放error模块，由于依赖引入的层级关系，会出现嵌套依赖的情况，所以放顶层模块
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: ErrorContext.java, v 0.1 2018-04-16 上午11:01 Exp $
  */
 @Data

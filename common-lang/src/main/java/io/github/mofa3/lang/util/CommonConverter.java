@@ -31,7 +31,7 @@ import java.util.concurrent.ConcurrentHashMap;
 /**
  * cglib 对象转换器
  *
- * @author ${guanzhong}
+ * @author lumoere
  * @version $Id: CommonConverter.java, v 0.1 2017年06月10日 下午1:00 Exp $
  */
 @Slf4j

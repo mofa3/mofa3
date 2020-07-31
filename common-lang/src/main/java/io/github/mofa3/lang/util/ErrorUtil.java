@@ -31,7 +31,7 @@ import java.net.UnknownHostException;
 /**
  * 错误信息构建工具类
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: ErrorUtil.java, v 0.1 2018-04-16 上午11:25 Exp $
  */
 @SuppressWarnings("unused")

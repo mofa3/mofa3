@@ -22,7 +22,7 @@ import io.github.mofa3.lang.enums.ResponseCodeEnum;
  * 业务处理异常
  * 业务处理异常提示与检查参数类似，但是有区别于参数校验异常
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: BizProcessException.java, v 0.1 2018-04-14 下午5:38 Exp $
  */
 @SuppressWarnings("unused")

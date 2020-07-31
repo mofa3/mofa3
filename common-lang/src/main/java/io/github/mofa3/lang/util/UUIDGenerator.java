@@ -20,7 +20,7 @@ import java.util.UUID;
 /**
  * UUID 工具类
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: UUIDGenerator.java, v 0.1 2018-07-06 上午10:42 Exp $
  */
 @SuppressWarnings("unused")

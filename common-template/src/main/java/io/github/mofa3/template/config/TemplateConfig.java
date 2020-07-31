@@ -21,7 +21,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * io.github.mofa3下自动装配包扫描
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: TemplateConfig.java, v 0.1 2018-05-29 下午7:41 Exp $
  */
 @Configuration

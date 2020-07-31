@@ -42,7 +42,7 @@ import java.util.Date;
  * <p>
  * java time对时间格式要求很严格，这里时间操作方法大部分都是Date作为入参
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: DateUtil.java, v 0.1 2018-01-12 下午1:49 Exp $
  */
 @Data

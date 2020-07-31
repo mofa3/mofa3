@@ -29,7 +29,7 @@ import java.lang.reflect.Method;
 /**
  * 性能日志Profiler Aspect
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: MofaProfilerAspect.java, v 0.1 2018-04-23 下午9:33 Exp $
  */
 @Aspect

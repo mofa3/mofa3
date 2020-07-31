@@ -18,7 +18,7 @@ package io.github.mofa3.test;
 /**
  * TODO
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: ApplicationServer.java, v 0.1 2017-11-24 下午9:50 Exp $
  */
 public class ApplicationServer {

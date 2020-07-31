@@ -25,7 +25,7 @@ import io.github.mofa3.cache.service.SerialNumService;
 /**
  * Lua脚本初始化
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: LuaScriptRunner.java, v 0.1 2018-07-23 上午11:53 Exp $
  */
 @Slf4j

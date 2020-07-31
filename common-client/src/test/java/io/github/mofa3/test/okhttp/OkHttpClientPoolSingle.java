@@ -23,7 +23,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * 单例的HttpClient连接池
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: HttpClientSingle.java, v 0.1 2018-04-19 下午5:57 Exp $
  */
 @SuppressWarnings("unused")

@@ -28,7 +28,7 @@ import java.util.Date;
  * 使用offset pageSize参数作为分页参数，分页优先使用优先使用pageNo，在pageNo和offset同时传入的情况下
  * 查询分页以pageNo为准
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: BaseModel.java, v 0.1 2018-06-05 下午9:41 Exp $
  */
 @Data

@@ -19,7 +19,7 @@ package io.github.mofa3.template.controller;
  * Controller模板方法回调接口
  * 幂等控制，有写入操作的情况下，要求必须实现方法细节
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: ControllerCallback.java, v 0.1 2018-04-16 下午5:14 Exp $
  */
 public interface ControllerCallback<T> {

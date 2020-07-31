@@ -20,7 +20,7 @@ import java.math.BigDecimal;
 /**
  * 检查数学运算中的溢出
  *
- * @author ${guanzhong}
+ * @author lumoere
  * @version $Id: CheckOverflow.java, v 0.1 2018年01月05日 下午3:07 Exp $
  */
 @SuppressWarnings("unused")

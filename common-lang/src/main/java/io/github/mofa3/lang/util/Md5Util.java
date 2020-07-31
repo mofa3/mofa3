@@ -23,7 +23,7 @@ import java.security.MessageDigest;
 /**
  * MD5工具类
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: MD5Encryption.java, v 0.1 2017-11-29 下午2:27 Exp $
  */
 @SuppressWarnings("unused")

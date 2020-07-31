@@ -27,9 +27,9 @@ import java.util.Date;
 
 /**
  * 时间构建工具类
- * 默认实例化当前时间，构造参数有LocalDateTime 和 Date，字符串 --> Date、Date --> 字符串格式化
+ * 默认实例化当前时间，构造参数有LocalDateTime 和 Date，字符串 --&lt; Date、Date --&lt; 字符串格式化
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: DateBuild.java, v 0.1 2018-05-28 下午8:35 Exp $
  */
 @SuppressWarnings("unused")

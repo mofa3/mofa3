@@ -29,7 +29,7 @@ import java.util.List;
  * <p>
  * 默认提供两种长度，如果位数不够，避免数据爆发增长导致自增位不够，自增位会自动升位，根据需要判断是否支持升位，数据库字段长度预留升位空间
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: SerialNumService.java, v 0.1 2018-05-31 下午3:38 Exp $
  */
 @SuppressWarnings("unused")

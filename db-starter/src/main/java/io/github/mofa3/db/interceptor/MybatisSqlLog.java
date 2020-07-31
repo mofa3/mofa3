@@ -48,7 +48,7 @@ import java.util.regex.Matcher;
 /**
  * mybatis sql日志处理
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: MybatisSqlLog.java, v 0.1 2018-09-20 下午5:50 Exp $
  */
 @Slf4j

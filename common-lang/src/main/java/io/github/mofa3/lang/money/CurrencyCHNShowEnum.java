@@ -21,7 +21,7 @@ import lombok.AllArgsConstructor;
 /**
  * 专为多币种提供的中文展示描述枚举。
  *
- * @author ${guanzhong}
+ * @author lumoere
  * @version $Id: CurrencyCHNShowEnum.java, v 0.1 2018年01月05日 下午3:07 Exp $
  */
 @AllArgsConstructor(access = AccessLevel.PRIVATE)

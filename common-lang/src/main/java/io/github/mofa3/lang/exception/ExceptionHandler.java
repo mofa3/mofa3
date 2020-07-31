@@ -24,7 +24,7 @@ import io.github.mofa3.lang.enums.ResponseCodeEnum;
 /**
  * 非模板方式全局异常处理
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: ExceptionHandler.java, v 0.1 2018-07-16 上午11:03 Exp $
  */
 @Slf4j

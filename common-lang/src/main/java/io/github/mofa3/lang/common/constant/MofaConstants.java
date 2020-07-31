@@ -18,7 +18,7 @@ package io.github.mofa3.lang.common.constant;
 /**
  * 常量类
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: MofaConstants.java, v 0.1 2018年04月09日 下午2:25 Exp $
  */
 @SuppressWarnings("unused")

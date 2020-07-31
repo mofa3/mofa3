@@ -29,7 +29,7 @@ import java.util.List;
  * baseServiceImpl 实现
  * 避免 No qualifying bean 问题，注入由子类完成
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: BaseServiceImpl.java, v 0.1 2018-06-05 下午9:56 Exp $
  */
 @SuppressWarnings("unused")

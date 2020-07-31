@@ -18,7 +18,7 @@ package io.github.mofa3.lang.common.constant;
 /**
  * Http常量类
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: HttpConstants.java, v 0.1 2017-11-16 下午4:53 Exp $
  */
 @SuppressWarnings("unused")

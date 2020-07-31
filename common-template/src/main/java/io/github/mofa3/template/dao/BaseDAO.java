@@ -23,7 +23,7 @@ import io.github.mofa3.template.model.BaseModel;
 /**
  * 基础增删改查
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: BaseDAO.java, v 0.1 2018-08-29 下午8:41 Exp $
  */
 @SuppressWarnings("unused")

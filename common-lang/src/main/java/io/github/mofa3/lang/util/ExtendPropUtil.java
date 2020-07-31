@@ -26,7 +26,7 @@ import java.util.Map;
 /**
  * 扩展属性转换工具类
  *
- * @author ${guanzhong}
+ * @author lumoere
  * @version $Id: ExtendPropUtil.java, v 0.1 2017年06月10日 下午2:10 Exp $
  */
 public class ExtendPropUtil {

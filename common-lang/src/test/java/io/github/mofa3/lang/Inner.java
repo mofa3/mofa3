@@ -20,7 +20,7 @@ import lombok.Data;
 /**
  * TODO
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: Inner.java, v 0.1 2018-07-17 下午3:45 Exp $
  */
 @Data

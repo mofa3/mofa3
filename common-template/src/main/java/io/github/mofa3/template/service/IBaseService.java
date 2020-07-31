@@ -22,7 +22,7 @@ import io.github.mofa3.template.model.BaseModel;
 /**
  * baseService 接口，提供基础的列表查询、单条查询、保存、更新、删除（逻辑删除）方法
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: IBaseService.java, v 0.1 2018-06-05 下午9:45 Exp $
  */
 @SuppressWarnings("unused")

@@ -21,7 +21,7 @@ import lombok.AllArgsConstructor;
 /**
  * 加减时间选择枚举类
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: DateEnum.java, v 0.1 2018-05-25 下午8:19 Exp $
  */
 @SuppressWarnings("unused")

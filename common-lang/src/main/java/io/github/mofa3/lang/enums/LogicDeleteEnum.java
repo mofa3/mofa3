@@ -22,7 +22,7 @@ import lombok.Getter;
 /**
  * 逻辑删除枚举
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: LogicDeleteEnum.java, v 0.1 2018-09-03 下午8:37 Exp $
  */
 @SuppressWarnings("unused")

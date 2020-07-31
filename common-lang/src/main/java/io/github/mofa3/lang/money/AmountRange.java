@@ -24,7 +24,7 @@ import java.io.Serializable;
 /**
  * 金额区间，配置格式：[0,+)，(10000,50000)
  *
- * @author ${guanzhong}
+ * @author lumoere
  * @version $Id: AmountRange.java, v 0.1 2018年01月05日 下午3:07 Exp $
  */
 @SuppressWarnings("unused")

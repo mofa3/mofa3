@@ -26,7 +26,7 @@ import java.io.Writer;
 /**
  * io流读取
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: StreamUtil.java, v 0.1 2018-09-26 下午7:24 Exp $
  */
 @SuppressWarnings("unused")

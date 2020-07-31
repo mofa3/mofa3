@@ -27,7 +27,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * redisson 缓存实现
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: CacheServiceImpl.java, v 0.1 2018-09-19 下午2:07 Exp $
  */
 @AllArgsConstructor

@@ -23,7 +23,7 @@ import java.io.Serializable;
 /**
  * 应用结果类
  *
- * @author ${guanzhong}
+ * @author lumoere
  * @version $Id: Result.java, v 0.1 2017-12-27 下午6:15 Exp $
  */
 @Data

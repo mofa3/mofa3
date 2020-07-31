@@ -23,7 +23,7 @@ import io.github.mofa3.lang.enums.ResponseCodeEnum;
  * 使用时建议把提示信息输出，告知调用者补全必须参数
  * 当前异常类仅作为参数校验失败的提示，没有必要将异常信息抛出给上层服务，所以只需要验参提示即可
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: CheckParamException.java, v 0.1 2018-04-13 下午9:11 Exp $
  */
 @SuppressWarnings("unused")

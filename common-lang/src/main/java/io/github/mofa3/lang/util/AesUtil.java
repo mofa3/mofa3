@@ -25,7 +25,7 @@ import javax.crypto.spec.SecretKeySpec;
 /**
  * AES 加解密工具类
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: AesUtil.java, v 0.1 2018-08-16 下午7:54 Exp $
  */
 @Slf4j

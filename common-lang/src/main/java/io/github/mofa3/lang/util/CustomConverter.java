@@ -20,7 +20,7 @@ import java.util.Map;
 /**
  * 自定义转换器，针对Cglib不能转换的类型手动处理
  *
- * @author ${guanzhong}
+ * @author lumoere
  * @version $Id: CustomConverter.java, v 0.1 2017年06月10日 下午2:09 Exp $
  */
 public class CustomConverter implements net.sf.cglib.core.Converter {

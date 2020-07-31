@@ -34,7 +34,7 @@ import io.github.mofa3.lang.util.ErrorUtil;
  * Controller操作模板
  * 需要获取应用名称，使用了Spring boot的默认配置应用名称，最好使用Spring boot项目，并有相应配置
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: AbstractControllerTemplate.java, v 0.1 2018-04-16 下午5:24 Exp $
  */
 @Slf4j

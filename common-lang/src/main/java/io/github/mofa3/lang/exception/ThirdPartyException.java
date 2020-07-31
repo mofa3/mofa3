@@ -22,7 +22,7 @@ import io.github.mofa3.lang.enums.ResponseCodeEnum;
  * 第三方调用异常
  * 第三方调用异常，非正常返回等提示信息，建议带上异常信息抛出，方便问题排查
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: ThirdPartyException.java, v 0.1 2018-04-14 下午6:20 Exp $
  */
 @SuppressWarnings("unused")

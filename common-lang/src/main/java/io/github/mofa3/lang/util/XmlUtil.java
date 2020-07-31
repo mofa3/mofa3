@@ -43,7 +43,7 @@ import java.util.Map;
  * 微信XXE漏洞修复推荐解决方案，禁用外部实体访问
  * https://pay.weixin.qq.com/wiki/doc/api/jsapi.php?chapter=23_5
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: XmlUtil.java, v 0.1 2018-03-26 下午2:54 Exp $
  */
 @Slf4j

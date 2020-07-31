@@ -41,7 +41,7 @@ import java.util.List;
 /**
  * 流水号序号生成Service
  *
- * @author ${baizhang}
+ * @author lumoere
  * @version $Id: SerialNumServiceImpl.java, v 0.1 2018-05-31 下午4:28 Exp $
  */
 @Slf4j
