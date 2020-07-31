@@ -25,6 +25,7 @@ import io.github.mofa3.lang.common.constant.HttpConstants;
  * @version: v 0.1 MediaTypeTest.java, 2019-07-31 17:29 Exp $
  */
 public class MediaTypeTest {
+//    @Deprecated
     public static void main(String[] args) {
 //        MediaType JSON = MediaType.parse("application/json; charset=utf-8");
         MediaType JSON = MediaType.parse(HttpConstants.APP_FORM_JSON);

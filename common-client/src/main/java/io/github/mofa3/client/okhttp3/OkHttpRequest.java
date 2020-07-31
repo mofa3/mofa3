@@ -15,6 +15,9 @@
  */
 package io.github.mofa3.client.okhttp3;
 
+import io.github.mofa3.client.common.HttpMethods;
+import io.github.mofa3.lang.exception.ThirdPartyException;
+import io.github.mofa3.lang.util.JsonUtil;
 import okhttp3.Authenticator;
 import okhttp3.Call;
 import okhttp3.CookieJar;
@@ -29,9 +32,6 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.internal.http.HttpMethod;
 import okhttp3.logging.HttpLoggingInterceptor;
-import io.github.mofa3.client.common.HttpMethods;
-import io.github.mofa3.lang.exception.ThirdPartyException;
-import io.github.mofa3.lang.util.JsonUtil;
 
 import javax.annotation.Nullable;
 import javax.net.ssl.HostnameVerifier;
