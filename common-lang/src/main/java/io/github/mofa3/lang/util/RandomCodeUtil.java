@@ -70,7 +70,7 @@ public class RandomCodeUtil {
      * @param type          验证码类型,参见本类的静态属性
      * @param length        验证码长度,要求大于0的整数
      * @param excludeString 需排除的特殊字符（无需排除则为null）
-     * @return
+     * @return 随机字符串
      */
     public static String generateTextCode(int type, int length, String excludeString) {
         if (length <= 0) {

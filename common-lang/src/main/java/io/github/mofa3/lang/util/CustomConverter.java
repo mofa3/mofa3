@@ -15,8 +15,6 @@
  */
 package io.github.mofa3.lang.util;
 
-import java.util.Map;
-
 /**
  * 自定义转换器，针对Cglib不能转换的类型手动处理
  *
@@ -35,17 +33,6 @@ public class CustomConverter implements net.sf.cglib.core.Converter {
     public Object convert(Object value, Class target, Object context) {
         if (value == null) {
             return null;
-        }
-
-        // String --> MAP
-        if (String.class.isInstance(value) && Map.class.isAssignableFrom(target)) {
-            return ExtendPropUtil.convert2MapFromString((String) value);
-        }
-
-        // MAP --> String
-        if (Map.class.isInstance(value) && String.class.isAssignableFrom(target)) {
-            return ExtendPropUtil.convert2StringFromMap((Map) value);
-
         }
 
         // String --> Enum

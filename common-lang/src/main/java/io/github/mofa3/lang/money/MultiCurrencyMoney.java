@@ -114,8 +114,8 @@ public class MultiCurrencyMoney implements Serializable, Comparable<MultiCurrenc
      * 构造器。
      *
      * <p>
-     * 创建一个具有金额<code>yuan</code>元<code>cent</cent>分和缺省币种的货币对象。
-     *
+     * 创建一个具有金额（yuan）元（cent）分和缺省币种的货币对象。
+     * </p>
      * @param yuan 金额元数。
      * @param cent 金额分数。
      */
@@ -354,13 +354,13 @@ public class MultiCurrencyMoney implements Serializable, Comparable<MultiCurrenc
     }
 
     /**
-     * <font color='red'><b>
-     * <p>慎用！
-     * <p>历史上发生过多次将分当成元来使用的资损事件。
-     * <p>请再次确认获取分的必要性！
-     * </b></font>
+     * <p>
+     * <font style='color:#FF0000'>
+     * 历史上发生过多次将分当成元来使用的资损事件，请再次确认获取分的必要性！
+     * </font>
      *
      * <p>获取本货币对象代表的金额数。
+     * </p>
      *
      * @return 金额数，以分为单位。
      */
@@ -392,7 +392,7 @@ public class MultiCurrencyMoney implements Serializable, Comparable<MultiCurrenc
     /**
      * 判断本货币对象与另一对象是否相等。
      * <p>
-     * p>
+     *
      * 货币对象与另一对象相等的充分必要条件是：<br>
      * <ul>
      *  <li>另一对象也属货币对象类。
@@ -412,7 +412,6 @@ public class MultiCurrencyMoney implements Serializable, Comparable<MultiCurrenc
     /**
      * 判断本货币对象与另一货币对象是否相等。
      * <p>
-     * p>
      * 货币对象与另一货币对象相等的充分必要条件是：<br>
      * <ul>
      *  <li>金额相同。

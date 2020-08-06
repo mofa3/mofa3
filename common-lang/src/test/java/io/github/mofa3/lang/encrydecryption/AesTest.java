@@ -16,7 +16,6 @@
 
 package io.github.mofa3.lang.encrydecryption;
 
-import com.sun.org.apache.xml.internal.security.algorithms.JCEMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.util.Base64Utils;
 
@@ -38,11 +37,7 @@ public class AesTest {
      *
      */
      private static final String  AES_CBC_PKCS7_128= "AES/CBC/PKCS5Padding";
-     static {
-         JCEMapper.register(AES_CBC_PKCS7_128,
-                 new JCEMapper.Algorithm("AES", "AES_CBC_PKCS7_128", "BlockEncryption", 128));
 
-     }
 
      public static void main(String[] args) {
         String data ="{\"settlement_code\":[\"JS19BUB14F5D8D4C\"],\"random_code\":[\"19BUB14F5D8D4C\",\"19BUAD0E89D780\"]}";

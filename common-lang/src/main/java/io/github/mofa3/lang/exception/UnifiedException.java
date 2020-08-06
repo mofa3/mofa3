@@ -107,6 +107,7 @@ public class UnifiedException extends RuntimeException {
      *
      * @param code  code
      * @param exMsg 提示内容
+     * @param contextThrowable 抛出异常类
      */
     public UnifiedException(String code, String exMsg, Throwable contextThrowable) {
         super(exMsg, contextThrowable);

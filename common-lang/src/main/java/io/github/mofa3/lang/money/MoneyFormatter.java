@@ -68,23 +68,24 @@ public class MoneyFormatter implements Serializable {
     // ~~~ 工具方法
 
     /**
-     * 多币种金额<code>MultiCurrencyMoney</code>对象转换成标准显示字符串方法。
+     * 多币种金额【MultiCurrencyMoney】对象转换成标准显示字符串方法。
      *
-     * <p>TODO!暂时只支持以下币种金额对象转换，未来币种待PD给出格式确认稿：
-     * <li>new MultiCurrencyMoney(1000,CurrencyEnum.USD.getCurrencyValue())-> US $1,000.00</li>
-     * <li>new MultiCurrencyMoney(1000,CurrencyEnum.RUB.getCurrencyValue())-> 10 000,00 руб.</li>
-     * <li>new MultiCurrencyMoney(1000,CurrencyEnum.GBP.getCurrencyValue())-> ￡1,000.00</li>
-     * <li>new MultiCurrencyMoney(1000,CurrencyEnum.BRL.getCurrencyValue())-> R$ 1.000,00</li>
-     * <li>new MultiCurrencyMoney(1000,CurrencyEnum.CAD.getCurrencyValue())-> C$ 1,000.00</li>
-     * <li>new MultiCurrencyMoney(1000,CurrencyEnum.AUD.getCurrencyValue())-> AU $1,000.00</li>
-     * <li>new MultiCurrencyMoney(1000,CurrencyEnum.EUR.getCurrencyValue())-> € 1.000,00</li>
-     * <li>new MultiCurrencyMoney(1000,CurrencyEnum.INR.getCurrencyValue())-> Rs. 1,000.00</li>
-     * <li>new MultiCurrencyMoney(1000,CurrencyEnum.UAH.getCurrencyValue())-> 1 000,00 грн. </li>
-     * <li>new MultiCurrencyMoney(1000,CurrencyEnum.JPY.getCurrencyValue())-> ￥ 1,000</li>
-     * <li>new MultiCurrencyMoney(1000,CurrencyEnum.MXN.getCurrencyValue())-> 1,000.00 MXN$</li>
-     * <li>new MultiCurrencyMoney(1000,CurrencyEnum.SGD.getCurrencyValue())-> 1,000.00 S$</li>
-     * <li>new MultiCurrencyMoney(1000,CurrencyEnum.CHF.getCurrencyValue())-> 1,000.00 CHF</li>
-     * <li>new MultiCurrencyMoney(1000,CurrencyEnum.PLN.getCurrencyValue())-> 1 000,00 PLN</li>
+     * <blockquote><pre>
+     * new MultiCurrencyMoney(1000,CurrencyEnum.USD.getCurrencyValue())-&lt; US $1,000.00
+     * new MultiCurrencyMoney(1000,CurrencyEnum.RUB.getCurrencyValue())-&lt; 10 000,00 руб.
+     * new MultiCurrencyMoney(1000,CurrencyEnum.GBP.getCurrencyValue())-&lt; ￡1,000.00
+     * new MultiCurrencyMoney(1000,CurrencyEnum.BRL.getCurrencyValue())-&lt; R$ 1.000,00
+     * new MultiCurrencyMoney(1000,CurrencyEnum.CAD.getCurrencyValue())-&lt; C$ 1,000.00
+     * new MultiCurrencyMoney(1000,CurrencyEnum.AUD.getCurrencyValue())-&lt; AU $1,000.00
+     * new MultiCurrencyMoney(1000,CurrencyEnum.EUR.getCurrencyValue())-&lt; € 1.000,00
+     * new MultiCurrencyMoney(1000,CurrencyEnum.INR.getCurrencyValue())-&lt; Rs. 1,000.00
+     * new MultiCurrencyMoney(1000,CurrencyEnum.UAH.getCurrencyValue())-&lt; 1 000,00 грн.
+     * new MultiCurrencyMoney(1000,CurrencyEnum.JPY.getCurrencyValue())-&lt; ￥ 1,000
+     * new MultiCurrencyMoney(1000,CurrencyEnum.MXN.getCurrencyValue())-&lt; 1,000.00 MXN$
+     * new MultiCurrencyMoney(1000,CurrencyEnum.SGD.getCurrencyValue())-&lt; 1,000.00 S$
+     * new MultiCurrencyMoney(1000,CurrencyEnum.CHF.getCurrencyValue())-&lt; 1,000.00 CHF
+     * new MultiCurrencyMoney(1000,CurrencyEnum.PLN.getCurrencyValue())-&lt; 1 000,00 PLN
+     * </pre></blockquote>
      *
      * @param money 多币种金额
      * @return 标准显示字符串
@@ -156,22 +157,22 @@ public class MoneyFormatter implements Serializable {
     /**
      * 标准显示字符串转换成多币种金额<code>MultiCurrencyMoney</code>对象方法。
      *
-     * <p>TODO!暂时只支持以下币种金额对象转换，未来币种待PD给出格式确认稿：
-     *
-     * <li>US $1,000.00 -> new MultiCurrencyMoney(1000,CurrencyEnum.USD.getCurrencyValue())</li>
-     * <li>10 000,00 руб.-> new MultiCurrencyMoney(1000,CurrencyEnum.RUB.getCurrencyValue())</li>
-     * <li>￡1,000.00-> new MultiCurrencyMoney(1000,CurrencyEnum.GBP.getCurrencyValue())</li>
-     * <li>R$ 1.000,00-> new MultiCurrencyMoney(1000,CurrencyEnum.BRL.getCurrencyValue())</li>
-     * <li>C$ 1,000.00-> new MultiCurrencyMoney(1000,CurrencyEnum.CAD.getCurrencyValue())</li>
-     * <li>AU $1,000.00-> new MultiCurrencyMoney(1000,CurrencyEnum.AUD.getCurrencyValue())</li>
-     * <li>€ 1.000,00-> new MultiCurrencyMoney(1000,CurrencyEnum.EUR.getCurrencyValue())</li>
-     * <li>Rs. 1,000.00-> new MultiCurrencyMoney(1000,CurrencyEnum.INR.getCurrencyValue())</li>
-     * <li>1 000,00 грн.-> new MultiCurrencyMoney(1000,CurrencyEnum.UAH.getCurrencyValue()) </li>
-     * <li>￥ 1,000-> new MultiCurrencyMoney(1000,CurrencyEnum.JPY.getCurrencyValue())</li>
-     * <li>1,000.00 MXN$-> new MultiCurrencyMoney(1000,CurrencyEnum.MXN.getCurrencyValue())</li>
-     * <li>1,000.00 S$-> new MultiCurrencyMoney(1000,CurrencyEnum.SGD.getCurrencyValue())</li>
-     * <li>1,000.00 CHF-> new MultiCurrencyMoney(1000,CurrencyEnum.CHF.getCurrencyValue())</li>
-     * <li>1 000,00 PLN-> new MultiCurrencyMoney(1000,CurrencyEnum.PLN.getCurrencyValue())</li>
+     * <blockquote><pre>
+     * US $1,000.00 -&lt; new MultiCurrencyMoney(1000,CurrencyEnum.USD.getCurrencyValue())
+     * 10 000,00 руб.-&lt; new MultiCurrencyMoney(1000,CurrencyEnum.RUB.getCurrencyValue())
+     * ￡1,000.00-&lt; new MultiCurrencyMoney(1000,CurrencyEnum.GBP.getCurrencyValue())
+     * R$ 1.000,00-&lt; new MultiCurrencyMoney(1000,CurrencyEnum.BRL.getCurrencyValue())
+     * C$ 1,000.00-&lt; new MultiCurrencyMoney(1000,CurrencyEnum.CAD.getCurrencyValue())
+     * AU $1,000.00-&lt; new MultiCurrencyMoney(1000,CurrencyEnum.AUD.getCurrencyValue())
+     * € 1.000,00-&lt; new MultiCurrencyMoney(1000,CurrencyEnum.EUR.getCurrencyValue())
+     * Rs. 1,000.00-&lt; new MultiCurrencyMoney(1000,CurrencyEnum.INR.getCurrencyValue())
+     * 1 000,00 грн.-&lt; new MultiCurrencyMoney(1000,CurrencyEnum.UAH.getCurrencyValue()) 
+     * ￥ 1,000-&lt; new MultiCurrencyMoney(1000,CurrencyEnum.JPY.getCurrencyValue())
+     * 1,000.00 MXN$-&lt; new MultiCurrencyMoney(1000,CurrencyEnum.MXN.getCurrencyValue())
+     * 1,000.00 S$-&lt; new MultiCurrencyMoney(1000,CurrencyEnum.SGD.getCurrencyValue())
+     * 1,000.00 CHF-&lt; new MultiCurrencyMoney(1000,CurrencyEnum.CHF.getCurrencyValue())
+     * 1 000,00 PLN-&lt; new MultiCurrencyMoney(1000,CurrencyEnum.PLN.getCurrencyValue())
+     * </pre></blockquote>
      *
      * @param moneyStr 标准显示字符串
      * @return 多币种金额

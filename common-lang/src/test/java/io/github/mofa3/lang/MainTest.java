@@ -21,5 +21,8 @@ package io.github.mofa3.lang;
  * @author github.com/lujun920
  */
 public class MainTest {
+    public static void main(String[] args) {
+
+    }
 
 }

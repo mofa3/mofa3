@@ -19,25 +19,22 @@ package io.github.mofa3.lang.common.constant;
  * Http常量类
  *
  * @author lumoere
- * @version $Id: HttpConstants.java, v 0.1 2017-11-16 下午4:53 Exp $
  */
 @SuppressWarnings("unused")
 public class HttpConstants {
     /**
      * 表单方式提交数据，数据格式为被编码为名称/值对
-     * 例如：id=123&name=java
-     * 是标准的编码格式
      */
     public static final String APP_FORM_URLENCODED = "application/x-www-form-urlencoded";
 
     /**
      * 数据被编码成一条消息，页面上一个控件对应消息中的一部分
-     * 通常作为上传文件使用
+     * <p>使用场景：通常作为上传文件使用</p>
      */
     public static final String APP_FORM_DATA = "multipart/form-data";
 
     /**
-     * 数据被编码成json格式提交
+     * 数据被编码成json格式
      */
     public static final String APP_FORM_JSON = "application/json";
 
@@ -47,22 +44,22 @@ public class HttpConstants {
     public static final String TEXT_PLAIN = "text/plain";
 
     /**
-     * 数据以html方式编码，能正确的被浏览器识别
+     * 数据以html方式编码，能正确的被浏览器识别解析
      */
     public static final String TEXT_HTML = "text/html";
 
     /**
-     * 数据以xml方式编码
+     * 数据以xml数据格式编码
      */
     public static final String TEXT_XML = "text/xml";
 
     /**
-     * 数据以json方式编码
+     * 数据以文本json编码
      */
     public static final String TEXT_JSON = "text/json";
 
     /**
-     * 链接关闭
+     * 关闭
      */
     public static final String CONN_CLOSE = "close";
 
@@ -73,15 +70,16 @@ public class HttpConstants {
 
     /**
      * 100-continue 协议
-     * 使用HTTP/1.1协议的curl，发送一个请求，在post数据量超过1K，
-     * 100 Continue请求一次没发送完，需要继续发送，会做如下两个步骤：
-     * 1、发送一个请求, 包含一个Expect:100-continue, 询问Server使用愿意接受数据
-     * 2、接收到Server返回的100-continue应答以后, 才把数据POST给Server
-     * <p>
-     * 对HTTP/1.1客户端的要求：
-     * 1、如果客户端在发送请求体之前，想等待服务器返回100状态码，那么客户端必须要发送一个Expect请求头信息，
-     * 即：”100-continue”请求头信息；
-     * 2、如果一个客户端不打算发送请求体的时候，一定不要使用“100-continue”发送Expect的请求头信息；
+     * <p>使用HTTP/1.1协议的curl，发送一个请求，在post数据量超过1K，
+     * 100 Continue请求一次没发送完，需要继续发送，会做如下两个步骤：</p>
+     *
+     * <p>1、发送一个请求, 包含一个Expect:100-continue, 询问server使用愿意接受数据。</p>
+     * <p>2、接收到server返回的100-continue应答以后, 才把数据POST给server。</p>
+     *
+     * <p>对HTTP/1.1客户端的要求：</p>
+     * <p>1、如果客户端在发送请求体之前，想等待服务器返回100状态码，那么客户端必须要发送一个Expect请求头信息，
+     * 即：”100-continue”请求头信息。</p>
+     * <p>2、如果一个客户端不打算发送请求体的时候，一定不要使用“100-continue”发送Expect的请求头信息。</p>
      */
     public static final String EXPECT_CONTINUE = "100-continue";
 

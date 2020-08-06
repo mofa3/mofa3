@@ -437,8 +437,8 @@ public class OkHttpRequest {
     /**
      * 开启自动重定向
      *
-     * @param followRedirects
-     * @return
+     * @param followRedirects 是否开启重定向
+     * @return OkHttpRequest
      */
     public OkHttpRequest followRedirects(boolean followRedirects) {
         this.followRedirects = followRedirects;
@@ -448,8 +448,8 @@ public class OkHttpRequest {
     /**
      * 开启自动HTTPS到HTTP，以及HTTP到HTTPS的重定向
      *
-     * @param followSslRedirects
-     * @return
+     * @param followSslRedirects 是否开启https、http的相互重定向
+     * @return OkHttpRequest
      */
     public OkHttpRequest followSslRedirects(boolean followSslRedirects) {
         this.followSslRedirects = followSslRedirects;
@@ -459,8 +459,8 @@ public class OkHttpRequest {
     /**
      * 身份验证
      *
-     * @param authenticator
-     * @return
+     * @param authenticator Authenticator
+     * @return OkHttpRequest
      */
     public OkHttpRequest authenticator(Authenticator authenticator) {
         this.authenticator = authenticator;
@@ -482,8 +482,8 @@ public class OkHttpRequest {
      * 增加自定义拦截器
      * 自定义拦截器实现Interceptor即可
      *
-     * @param interceptor
-     * @return
+     * @param interceptor 拦截器对象
+     * @return OkHttpRequest
      */
     public OkHttpRequest interceptor(Interceptor interceptor) {
         this.interceptors.add(interceptor);
@@ -493,8 +493,8 @@ public class OkHttpRequest {
     /**
      * 设置cookie
      *
-     * @param cookieJar
-     * @return
+     * @param cookieJar cookie
+     * @return OkHttpRequest
      */
     public OkHttpRequest cookieManager(CookieJar cookieJar) {
         this.cookieJar = cookieJar;
@@ -617,8 +617,8 @@ public class OkHttpRequest {
     /**
      * 对象以json参数请求
      *
-     * @param body
-     * @return
+     * @param body 请求对象
+     * @return OkHttpRequest
      */
     public OkHttpRequest json(Object body) {
         return body(MEDIA_TYPE_JSON, JsonUtil.beanToJson(body));
@@ -627,8 +627,8 @@ public class OkHttpRequest {
     /**
      * 以json字符串请求
      *
-     * @param json
-     * @return
+     * @param json json字符串
+     * @return OkHttpRequest
      */
     public OkHttpRequest json(String json) {
         return body(MEDIA_TYPE_JSON, json);

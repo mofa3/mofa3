@@ -47,6 +47,7 @@ public class CheckOverflow {
     /**
      * 检查decimal是否溢出 long
      *
+     * @param a BigDecimal
      * @return long值
      */
     public static long bigDecimalChecked(BigDecimal a) {
@@ -58,6 +59,10 @@ public class CheckOverflow {
 
     /**
      * 带溢出检查的double乘法 , 注意此方法最后检查是否超过Long
+     *
+     * @param a double
+     * @param cent long
+     * @return double值
      */
     public static double doubleCheckedMultiply(double a, long cent) {
         double result = a * cent;
@@ -70,6 +75,10 @@ public class CheckOverflow {
 
     /**
      * 带溢出检查的int加法
+     *
+     * @param a int
+     * @param b int
+     * @return int值
      */
     public static int intCheckedAdd(int a, int b) {
         long result = (long) a + b;
@@ -79,6 +88,10 @@ public class CheckOverflow {
 
     /**
      * 带溢出检查的int减法
+     *
+     * @param a int
+     * @param b int
+     * @return int值
      */
     public static int intCheckedSubtract(int a, int b) {
         long result = (long) a - b;
@@ -89,6 +102,10 @@ public class CheckOverflow {
 
     /**
      * 带溢出检查的int乘法
+     *
+     * @param a int
+     * @param b int
+     * @return int值
      */
     public static int intCheckedMultiply(int a, int b) {
         long result = (long) a * b;
@@ -98,6 +115,10 @@ public class CheckOverflow {
 
     /**
      * 带溢出检查的long加法
+     *
+     * @param a long
+     * @param b long
+     * @return long值
      */
     public static long longCheckedAdd(long a, long b) {
         long result = a + b;
@@ -107,6 +128,10 @@ public class CheckOverflow {
 
     /**
      * 带溢出检查的long减法
+     *
+     * @param a long
+     * @param b long
+     * @return long值
      */
     public static long longCheckedSubtract(long a, long b) {
         long result = a - b;
@@ -116,21 +141,15 @@ public class CheckOverflow {
 
     /**
      * 带溢出检查的long乘法
+     *
+     * @param a long
+     * @param b long
+     * @return long值
      */
     public static long longCheckedMultiply(long a, long b) {
         // Hacker's Delight, Section 2-12
         int leadingZeros = Long.numberOfLeadingZeros(a) + Long.numberOfLeadingZeros(~a)
                 + Long.numberOfLeadingZeros(b) + Long.numberOfLeadingZeros(~b);
-        /*
-         * If leadingZeros > Long.SIZE + 1 it's definitely fine, if it's < Long.SIZE it's definitely
-         * bad. We do the leadingZeros check to avoid the division below if at all possible.
-         *
-         * Otherwise, if b == Long.MIN_VALUE, then the only allowed values of a are 0 and 1. We take
-         * care of all a < 0 with their own check, because in particular, the case a == -1 will
-         * incorrectly pass the division check below.
-         *
-         * In all other cases, we check that either a is 0 or the result is consistent with division.
-         */
         if (leadingZeros > Long.SIZE + 1) {
             return a * b;
         }

@@ -20,9 +20,9 @@ import lombok.AllArgsConstructor;
 
 /**
  * 站内系统支持的统一的币种定义枚举。
- * <li>GB2659-94
- * <li>http://en.wikipedia.org/wiki/ISO_4217
- * <li>币种符号权威参考：http://www.xe.com/symbols.php
+ * <p>GB2659-94</p>
+ * <p>http://en.wikipedia.org/wiki/ISO_4217</p>
+ * <p>币种符号权威参考：http://www.xe.com/symbols.php</p>
  *
  * @author lumoere
  * @version $Id: CurrencyEnum.java, v 0.1 2018年01月05日 下午3:07 Exp $

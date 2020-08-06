@@ -34,25 +34,21 @@ import java.util.Map;
 
 /**
  * xml工具类
- * xml --> Object
- * xml --> Map
- * xml --> String
- * xml --> JSON
+ * xml --&lt; Object
+ * xml --&lt; Map
+ * xml --&lt; String
+ * xml --&lt; JSON
  * <p>
  * 处理xml需要特别注意XXE访问问题
  * 微信XXE漏洞修复推荐解决方案，禁用外部实体访问
  * https://pay.weixin.qq.com/wiki/doc/api/jsapi.php?chapter=23_5
- *
+ *</p>
  * @author lumoere
  * @version $Id: XmlUtil.java, v 0.1 2018-03-26 下午2:54 Exp $
  */
 @Slf4j
 @SuppressWarnings({"unused", "unchecked"})
 public class XmlUtil {
-    /**
-     * HashMap 默认负载因子
-     */
-    private static final float DEFAULT_LOAD_FACTOR = 0.75f;
 
     /**
      * InputStream 转 Map
@@ -157,7 +153,7 @@ public class XmlUtil {
      * @return map
      */
     private static Map<String, Object> elementsToMap(List<Element> elements) {
-        Map<String, Object> map = new HashMap<>(Math.round(elements.size() / DEFAULT_LOAD_FACTOR) + 1);
+        Map<String, Object> map = new HashMap<>(Math.round(elements.size()) + 1);
         for (Element e : elements) {
             if (e.isTextOnly()) {
                 map.put(e.getName(), e.getText());

@@ -23,7 +23,6 @@ import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.databind.type.CollectionLikeType;
-import lombok.experimental.UtilityClass;
 import io.github.mofa3.lang.exception.JsonSerializedException;
 
 import java.io.IOException;
@@ -42,7 +41,6 @@ import java.util.TimeZone;
  * @author lumoere
  * @version $Id: JsonUtil.java, v 0.1 2018-09-18 下午10:10 Exp $
  */
-@UtilityClass
 public class JsonUtil {
     private static ObjectMapper mapper;
 
@@ -67,7 +65,8 @@ public class JsonUtil {
     /**
      * 对象转JSON字符串
      *
-     * @param obj 被转换对象
+     * @param obj   source
+     * @param <T>   target
      * @return json字符串
      */
     public static <T> String beanToJson(T obj) {
@@ -87,7 +86,7 @@ public class JsonUtil {
      * @param json  json字符串
      * @param claxx 转换类型
      * @param <T>   泛型类型
-     * @return 转换后对象
+     * @return claxx对象
      */
     public static <T> T jsonToBean(String json, Class<T> claxx) {
         try {
@@ -153,7 +152,7 @@ public class JsonUtil {
 
 
     /**
-     * stream转List<Bean>
+     * stream转List Bean
      *
      * @param in    InputStream
      * @param claxx 转换类型

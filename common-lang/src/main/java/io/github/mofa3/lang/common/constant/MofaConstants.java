@@ -180,7 +180,7 @@ public class MofaConstants {
     public static final String UNSOLVED = "?";
 
     /**
-     * &
+     * and
      */
     public static final String AND = "&";
 

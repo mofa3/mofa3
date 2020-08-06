@@ -34,7 +34,6 @@ import io.github.mofa3.cache.properties.RedisConfigProperties;
  * redis 服务模式为集群，初始化配置
  *
  * @author lumoere
- * @version $Id: RedissonClusterConfiguration.java, v 0.1 2020-03-27 下午1:47 Exp $
  */
 @Slf4j
 @Configuration

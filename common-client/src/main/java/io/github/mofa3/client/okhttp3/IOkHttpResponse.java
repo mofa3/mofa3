@@ -129,7 +129,7 @@ public interface IOkHttpResponse {
     <T> T toJsonType(TypeReference<?> typeReference);
 
     /**
-     * 结果以List<Bean>返回
+     * 结果以List Bean返回
      *
      * @param claxx 转换类型
      * @param <T>   泛型

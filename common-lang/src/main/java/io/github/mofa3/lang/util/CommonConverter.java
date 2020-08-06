@@ -77,6 +77,15 @@ public class CommonConverter {
      * @param source 源对象
      * @param target 目标对象
      */
+    /**
+     * 使用DefaultConverter转换对象
+     *
+     * @param source 源对象
+     * @param target 目标对象
+     * @param <T> 源对象泛型类型
+     * @param <E> 目标对象泛型类型
+     * @return target
+     */
     public static <T, E> E convert(T source, E target) {
         return convert(source, target, CustomConverter.INSTANCE);
     }
@@ -123,6 +132,16 @@ public class CommonConverter {
      *
      * @param targetClass 源对象
      * @param sources     源转换类集合对象
+     */
+
+    /**
+     * 使用DefaultConverter批量转换对象
+     *
+     * @param targetClass targetClass
+     * @param sources 源
+     * @param <T> 源泛型类型
+     * @param <E> 目标List泛型类型
+     * @return list
      */
     public static <T, E> List<E> convertList(Class<E> targetClass, Collection<T> sources) {
         return convertList(targetClass, sources, new ArrayList<>(), CustomConverter.INSTANCE);
