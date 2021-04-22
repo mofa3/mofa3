@@ -39,7 +39,7 @@
         <dom4j.version>2.1.3</dom4j.version>
         <javax-servlet.version>4.0.1</javax-servlet.version>
         <aspectjweaver.version>1.9.6</aspectjweaver.version>
-        <mybatis.version>3.5.1</mybatis.version>
+        <mybatis.version>3.5.6</mybatis.version>
         <jmh.version>1.21</jmh.version>
         <pagehelper.verion>5.1.10</pagehelper.verion>
     </properties>
