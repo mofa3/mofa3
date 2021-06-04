@@ -24,7 +24,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <mofa.version>${project.version}</mofa.version>
         <java.version>1.8</java.version>
-        <httpclient.version>4.5.5</httpclient.version>
+        <httpclient.version>4.5.13</httpclient.version>
         <okhttp.version>4.3.0</okhttp.version>
         <slf4j.version>1.7.30</slf4j.version>
         <lombok.version>1.18.10</lombok.version>
