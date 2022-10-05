@@ -28,7 +28,7 @@
         <okhttp.version>4.3.0</okhttp.version>
         <slf4j.version>1.7.30</slf4j.version>
         <lombok.version>1.18.10</lombok.version>
-        <jackson.version>2.11.1</jackson.version>
+        <jackson.version>2.12.6.1</jackson.version>
         <guava.version>29.0-jre</guava.version>
         <cglib.version>3.3.0</cglib.version>
         <mybatis-spring.version>2.1.0</mybatis-spring.version>
